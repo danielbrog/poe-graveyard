@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import './components/GraveyardLayout'
+import GraveyardLayout from './components/GraveyardLayout';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello Daniel! :)
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <div className="header__text">PoE Graveyard Placer</div>
       </header>
+      <GraveyardLayout />
     </div>
   );
 }
