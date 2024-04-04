@@ -1,17 +1,14 @@
 .graveyard__layout {
+    display:grid;
     border-style: solid;
     border-width: 5px;
     border-color: black;
-    width: 60vw;
+    width: 70vw;
+    height: 30vw;
     background-color: grey;
     color:red;
+    justify-items: stretch;
+    align-items: center;
+    grid-template-columns: repeat(17, 1fr);
 }
 
-.graveyard__graveSlot {
-    display: grid;
-    border-width: 2px;
-    border-style: solid;
-    border-color: aqua;
-    min-height: 5vh;
-    min-width: 5vh;
-}
