@@ -1,6 +1,6 @@
 import './styles/App.css';
-import './components/GraveyardLayout'
 import GraveyardLayout from './components/GraveyardLayout';
+import CorpseListLayout from './components/CorpseListLayout';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
           <div className="header__text">PoE Graveyard Placer</div>
       </header>
       <GraveyardLayout />
+      <CorpseListLayout />
     </div>
   );
 }
