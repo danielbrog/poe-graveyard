@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/poe-graveyard/static/css/main.1b8f5097.css",
+    "main.js": "/poe-graveyard/static/js/main.ea46ab9e.js",
+    "index.html": "/poe-graveyard/index.html",
+    "main.1b8f5097.css.map": "/poe-graveyard/static/css/main.1b8f5097.css.map",
+    "main.ea46ab9e.js.map": "/poe-graveyard/static/js/main.ea46ab9e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b8f5097.css",
+    "static/js/main.ea46ab9e.js"
+  ]
+}
