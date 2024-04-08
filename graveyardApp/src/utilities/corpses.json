@@ -1,0 +1,17 @@
+[
+    {
+        "effect":"+1",
+        "modifier":"ilvl",
+        "description":"+1 Item Level"
+    },
+    {
+        "effect":"+500",
+        "modifier":"physical",
+        "description":"500% increased chance of Physical Modifiers"
+    },
+    {
+        "effect":"-300",
+        "modifier":"physical",
+        "description":"Physical Modifiers are 300% scarcer "
+    }
+]

@@ -6,6 +6,10 @@ function graveSetup(){
 
     const walledGraves = graves.map((graveRow,y) => {
         return graveRow.map((grave,x)=>{
+
+            grave.x=x
+            grave.y=y
+
             // top and bottom wall
             if(y===0 || y===9){
                 grave.isWall=true
@@ -55,8 +59,7 @@ function graveSetup(){
             if((y===8) && ((x>8)&&(x<11))){
                 grave.isWall=true
             }
-
-            return grave
+            return {...grave, corpse: {}}
         })
     });
     return walledGraves
