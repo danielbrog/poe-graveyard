@@ -1,7 +1,8 @@
 .corpselist__layout {
-    width: 70vw;
+    width: 30vw;
     border-style:solid;
     border-color: darkgray;
     border-width: 1px;
-
+    overflow-y: scroll;
+    flex-grow: true;
 }

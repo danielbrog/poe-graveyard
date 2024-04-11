@@ -59,7 +59,7 @@ function graveSetup(){
             if((y===8) && ((x>8)&&(x<11))){
                 grave.isWall=true
             }
-            return {...grave, corpse: {}}
+            return {...grave, corpse: {}, plotWeight: 1}
         })
     });
     return walledGraves

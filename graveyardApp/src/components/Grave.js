@@ -11,23 +11,19 @@ const Grave = (props) => {
 
     const corpseDropped = (event) => {
         event.preventDefault()
-        console.log('DROP:')
-        const corpseData = event.dataTransfer.getData("corpse")
-        console.log(corpseData)
+        //can't drop corpse on wall
         if (props.grave.isWall){
-            console.log('cant place on wall')
             return
         }
         props.setGrave({
             ...props.grave,
-            corpse: JSON.parse(corpseData)
+            corpse: JSON.parse(event.dataTransfer.getData("corpse"))
         })
     }
 
     const corpseDragOver = (event) => {
         event.preventDefault()
     }
-
 
     return (
         <div 
@@ -36,7 +32,11 @@ const Grave = (props) => {
             className={props.grave.isWall?'grave_wall':'grave'} 
             onClick = {handleClick} 
             iswall={props.grave.isWall ? 'true' : undefined}>
-                {props.grave.corpse.modifier?props.grave.corpse.modifier:''}
+                <div className={props.grave.isWall ?'':'grave__plotlevel'}> 
+                    Clvl: {props.grave.plotWeight}
+                </div>
+                {props.grave.corpse.scalable?(((props.grave.corpse.effect>0)?'+': '') + props.grave.corpse.effect * props.grave.plotWeight): props.grave.corpse.effect }<br/>
+                {props.grave.corpse.modifier?props.grave.corpse.short:''}
         </div>
     );
 }

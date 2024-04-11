@@ -27,11 +27,15 @@
 
 .header__text {
   display: grid;
-  
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.main__app {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @keyframes App-logo-spin {

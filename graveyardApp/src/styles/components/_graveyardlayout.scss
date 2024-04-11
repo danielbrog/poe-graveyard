@@ -1,10 +1,13 @@
 .graveyard__layout {
+    min-width: 360px;
     display:grid;
     width: 70vw;
-    height: 30vw;
-    background-color: grey;
-    justify-items: stretch;
-    align-items: center;
+    height: fit-content;
+    align-items: start;
     grid-template-columns: repeat(17, 1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    justify-content: start;
+    
 }
 

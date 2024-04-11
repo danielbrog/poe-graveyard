@@ -7,6 +7,30 @@ import graveSetup from "../utilities/graveSetup";
 const GraveyardLayout = (props) => {
     const [graves, setGraves] = useState(graveSetup());
 
+    const updateAdjacent = (x,y,isAdded) =>{
+        if (isAdded){
+            //TODO: add corpse power for adjacent
+        } else {
+            //TODO: remove corpse power for adjacent
+        }
+    }
+
+    const updateRow = (x,y,isAdded)=>{
+        if (isAdded){
+            //TODO: add corpse power for row
+        } else {
+            //TODO: remove corpse power for row
+        }
+    }
+
+    const updateColumn = (x,y,isAdded)=>{
+        if (isAdded){
+            //TODO: add corpse power for column
+        }else {
+            //TODO: remove corpse power for column
+        }
+    }
+
     const setGrave = (newCorpse) => {
         setGraves(graves.map((graveRow, i) =>{
             if (i === newCorpse.y){

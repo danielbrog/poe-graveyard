@@ -4,8 +4,6 @@ import '../styles/components/_corpse.scss'
 const Corpse = (props) => {
     const onDrag = (event) => {
         event.preventDefault();
-        console.log('isdragging')
-
     }
 
     return (
@@ -14,8 +12,6 @@ const Corpse = (props) => {
         draggable 
         onDrag={(event) => onDrag(event)}
         onDragStart={(event) => {
-            console.log('droping corpse: ')
-            console.log(props.corpse)
             return event.dataTransfer.setData("corpse",JSON.stringify(props.corpse))
         }}
         >

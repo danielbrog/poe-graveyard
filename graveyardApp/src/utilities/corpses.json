@@ -2,16 +2,302 @@
     {
         "effect":"+1",
         "modifier":"ilvl",
-        "description":"+1 Item Level"
+        "short":"ilvl",
+        "description":"+1 Item Level",
+        "scalable":false
     },
     {
         "effect":"+500",
         "modifier":"physical",
-        "description":"500% increased chance of Physical Modifiers"
+        "short":"Phys",
+        "description":"500% increased chance of Physical Modifiers",
+        "scalable":true
     },
     {
         "effect":"-300",
         "modifier":"physical",
-        "description":"Physical Modifiers are 300% scarcer "
+        "short":"Phys",
+        "description":"Physical Modifiers are 300% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+300",
+        "modifier":"Attack",
+        "short":"Attack",
+        "description":"300% increased chance of Attack Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-150",
+        "modifier":"Attack",
+        "short":"Attack",
+        "description":"Attack Modifiers are 150% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+500",
+        "modifier":"Attribute",
+        "short":"Attr",
+        "description":"500% increased chance of Attribute Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-300",
+        "modifier":"Attribute",
+        "short":"Attr",
+        "description":"Attribute Modifiers are 300% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+300",
+        "modifier":"Caster",
+        "short":"Cast",
+        "description":"500% increased chance of Caster Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-150",
+        "modifier":"Caster",
+        "short":"Cast",
+        "description":"Caster Modifiers are 150% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+500",
+        "modifier":"Chaos",
+        "short":"Chaos",
+        "description":"500% increased chance of Chaos Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-300",
+        "modifier":"Chaos",
+        "short":"Chaos",
+        "description":"Chaos Modifiers are 300% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+500",
+        "modifier":"Cold",
+        "short":"Cold",
+        "description":"500% increased chance of Cold Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-300",
+        "modifier":"Cold",
+        "short":"Cold",
+        "description":"Cold Modifiers are 300% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+500",
+        "modifier":"Critical",
+        "short":"Crit",
+        "description":"500% increased chance of Critical Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-300",
+        "modifier":"Critical",
+        "short":"Crit",
+        "description":"Critical Modifiers are 300% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+500",
+        "modifier":"Defenses",
+        "short":"Def",
+        "description":"500% increased chance of Defenses Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-300",
+        "modifier":"Defenses",
+        "short":"Def",
+        "description":"Defenses Modifiers are 300% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+500",
+        "modifier":"Fire",
+        "short":"Fire",
+        "description":"500% increased chance of Fire Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-300",
+        "modifier":"Fire",
+        "short":"Fire",
+        "description":"Fire Modifiers are 300% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+500",
+        "modifier":"Gem",
+        "short":"Gem",
+        "description":"500% increased chance of Gem Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-300",
+        "modifier":"Gem",
+        "short":"Gem",
+        "description":"Gem Modifiers are 300% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+500",
+        "modifier":"Life",
+        "short":"Life",
+        "description":"500% increased chance of Life Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-300",
+        "modifier":"Life",
+        "short":"Life",
+        "description":"Life Modifiers are 300% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+500",
+        "modifier":"Lightning",
+        "short":"Light",
+        "description":"500% increased chance of Lightning Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-300",
+        "modifier":"Lightning",
+        "short":"Light",
+        "description":"Lightning Modifiers are 300% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+500",
+        "modifier":"Mana",
+        "short":"Mana",
+        "description":"500% increased chance of Mana Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-300",
+        "modifier":"Mana",
+        "short":"Mana",
+        "description":"Mana Modifiers are 300% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+500",
+        "modifier":"Resistance",
+        "short":"Res",
+        "description":"500% increased chance of Resistance Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-300",
+        "modifier":"Resistance",
+        "short":"Res",
+        "description":"Resistance Modifiers are 300% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+500",
+        "modifier":"Speed",
+        "short":"Speed",
+        "description":"500% increased chance of Speed Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-300",
+        "modifier":"Speed",
+        "short":"Speed",
+        "description":"Speed Modifiers are 300% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+300",
+        "modifier":"Elemental",
+        "short":"Ele",
+        "description":"300% increased chance of Elemental Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"-150",
+        "modifier":"Elemental",
+        "short":"Ele",
+        "description":"Elemental Modifiers are 150% scarcer",
+        "scalable":true
+    },
+    {
+        "effect":"+500",
+        "modifier":"Minion",
+        "short":"Minion",
+        "description":"500% increased chance of Minion Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"+50",
+        "modifier":"Modifier Tier",
+        "short":"Tier",
+        "description":"+50 to Modifier Tier Rating",
+        "scalable":true
+    },
+    {
+        "effect":"+300",
+        "modifier":"Prefix",
+        "short":"Prefix",
+        "description":"300% increased chance for Prefix Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"+300",
+        "modifier":"Suffix",
+        "short":"Suffix",
+        "description":"300% increased chance for Suffix Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"+1",
+        "modifier":"Explicit",
+        "short":"Mod",
+        "description":"+1 Explicit Modifier",
+        "scalable":false
+    },
+    {
+        "effect":"-1",
+        "modifier":"Explicit",
+        "short":"Mod",
+        "description":"-1 Explicit Modifier",
+        "scalable":false
+    },
+    {
+        "effect":"+150",
+        "modifier":"Haunted",
+        "short":"Haunt",
+        "description":"Armour can roll Haunted Modifiers 150% increased chance of Haunted Modifiers",
+        "scalable":true
+    },
+    {
+        "effect":"+25%",
+        "modifier":"Row",
+        "short":"Row",
+        "description":"25% increased Effect of Corpses in this Grave Row",
+        "scalable":false
+    },
+    {
+        "effect":"+25%",
+        "modifier":"Column",
+        "short":"Col",
+        "description":"25% increased Effect of Corpses in this Grave Column",
+        "scalable":false
+    },
+    {
+        "effect":"+40%",
+        "modifier":"Adjacent",
+        "short":"Adj",
+        "description":"40% increased Effect of [] Corpses adjacent to this Corpse",
+        "scalable":false
     }
 ]

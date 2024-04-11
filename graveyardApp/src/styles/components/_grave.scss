@@ -4,7 +4,10 @@
     border-style: solid;
     border-color: aqua;
     width: 100%;
-    height: 100%
+    aspect-ratio : 1 / 1;
+    overflow: hidden;
+    font-size: 1vw;
+    background-color: lightgray;
 }
 
 .grave_wall {
@@ -12,7 +15,12 @@
     border-width: 1px;
     border-style: solid;
     border-color: aqua;
+    aspect-ratio : 1 / 1;
     width: 100%;
-    height: 100%;
     background-color: black;
+}
+
+.grave__plotlevel {
+    background-color: darkgray;
+    height: min-content;
 }
