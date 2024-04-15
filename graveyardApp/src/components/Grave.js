@@ -1,7 +1,11 @@
 import React from 'react';
 import '../styles/components/_grave.scss'
+import { useSelector, useDispatch } from 'react-redux'
+import { addGrave } from '../reducers/graveyardLayoutSlice';
 
 const Grave = (props) => {
+    const graves = useSelector((state) => state.graveyardLayout)
+    const dispatch = useDispatch()
 
 
     const handleClick = () => {
@@ -11,14 +15,10 @@ const Grave = (props) => {
 
     const corpseDropped = (event) => {
         event.preventDefault()
-        //can't drop corpse on wall
-        if (props.grave.isWall){
-            return
-        }
-        props.setGrave({
+        dispatch(addGrave({
             ...props.grave,
             corpse: JSON.parse(event.dataTransfer.getData("corpse"))
-        })
+        }))
     }
 
     const corpseDragOver = (event) => {
