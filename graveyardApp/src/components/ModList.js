@@ -21,6 +21,7 @@ const ModList = (props) => {
                     effect: parseInt(effect),
                     description: grave.corpse.short,
                 }
+                return tempList[grave.corpse.modifier]
             })
         })
 
@@ -40,8 +41,8 @@ const ModList = (props) => {
         <div className='mod__list'>
             <h2>Mod List</h2>
             {Object.keys(list).map(key=>{
-                if(key=='undefined')return
-                return <Mod key={key} modInfo={list[key]} />
+                if(key==='undefined') return
+                return (<Mod key={key} modInfo={list[key]} />)
             })}
         </div>
     )

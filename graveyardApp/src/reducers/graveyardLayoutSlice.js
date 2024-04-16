@@ -13,10 +13,17 @@ export const graveyardLayoutSlice = createSlice({
                 return
             }
             state[action.payload.y][action.payload.x] = action.payload
+        },
+        removeGrave: (state, action) => {
+            //can't remove walls
+            if (action.payload.isWall){
+                return
+            }
+            state[action.payload.y][action.payload.x] = {...state[action.payload.y][action.payload.x], corpse: {}}
         }
     }
 })
 
-export const { addGrave } = graveyardLayoutSlice.actions
+export const { addGrave, removeGrave } = graveyardLayoutSlice.actions
 
 export default graveyardLayoutSlice.reducer

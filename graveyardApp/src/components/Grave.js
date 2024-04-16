@@ -1,15 +1,14 @@
 import React from 'react';
 import '../styles/components/_grave.scss'
-import { useSelector, useDispatch } from 'react-redux'
-import { addGrave } from '../reducers/graveyardLayoutSlice';
+import { useDispatch } from 'react-redux'
+import { addGrave, removeGrave } from '../reducers/graveyardLayoutSlice';
 
 const Grave = (props) => {
     const dispatch = useDispatch()
 
 
     const handleClick = () => {
-        console.log('grave: ')
-        console.log(props.grave)
+        dispatch(removeGrave(props.grave))
     }
 
     const corpseDropped = (event) => {
