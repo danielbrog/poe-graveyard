@@ -31,9 +31,9 @@ const Grave = (props) => {
             onClick = {handleClick} 
             iswall={props.grave.isWall ? 'true' : undefined}>
                 <div className={props.grave.isWall ?'':'grave__plotlevel'}> 
-                    Clvl: {props.grave.plotWeight}
+                    Clvl: {props.grave.plotWeight/100}
                 </div>
-                {props.grave.corpse.scalable?(((props.grave.corpse.effect>0)?'+': '') + props.grave.corpse.effect * props.grave.plotWeight): props.grave.corpse.effect }<br/>
+                {props.grave.corpse.scalable?(((props.grave.corpse.effect>0)?'+': '') + props.grave.corpse.effect/100 * props.grave.plotWeight): props.grave.corpse.effect }<br/>
                 {props.grave.corpse.modifier?props.grave.corpse.short:''}
         </div>
     );

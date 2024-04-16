@@ -31,7 +31,7 @@ const ModList = (props) => {
     const Mod = (props) => {
         return(
             <div>
-                {props.modInfo.scalable?props.modInfo.description+': '+props.modInfo.effect: props.modInfo.description +': ' + props.modInfo.count}<br />
+                {props.modInfo.scalable?props.modInfo.description+': '+props.modInfo.effect/100: props.modInfo.description +': ' + props.modInfo.count}<br />
             </div>
         )
     }
@@ -41,7 +41,7 @@ const ModList = (props) => {
         <div className='mod__list'>
             <h2>Mod List</h2>
             {Object.keys(list).map(key=>{
-                if(key==='undefined') return
+                if(key==='undefined') return ''
                 return (<Mod key={key} modInfo={list[key]} />)
             })}
         </div>
