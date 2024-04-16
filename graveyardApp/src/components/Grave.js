@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from 'react-redux'
 import { addGrave } from '../reducers/graveyardLayoutSlice';
 
 const Grave = (props) => {
-    const graves = useSelector((state) => state.graveyardLayout)
     const dispatch = useDispatch()
 
 
